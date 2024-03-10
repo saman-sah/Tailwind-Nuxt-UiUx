@@ -1,8 +1,12 @@
 <template>
+  <div>
+    <h1>Hello World !</h1>
+
   <div class="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-    <Button class="mt-10" href="#login" />
+    <Button />
   </div>
-  <ButtonGradient />
+  <ButtonGradient class="aaaaaaaaaaaa"/>
+  </div>
 </template>
 
 <script setup>

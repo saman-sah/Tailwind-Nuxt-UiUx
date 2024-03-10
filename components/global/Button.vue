@@ -1,10 +1,23 @@
 <template>
+   <button :class="[
+      color ? 'text-n-8' : 'text-n-1',className || '',
+      'btn-base'
+    ]"
+    v-if="!href"
+  >
+  Btn Def
+    <span class="relative z-10">
+      {{ children }}
+    </span>
+    <ButtonSvg class="ddddddddddd" :color="color" />
+  </button>
+  
   <NuxtLink :class="[
       white ? 'text-n-8' : 'text-n-1',
       'btn-base'
     ]"
     :to="href"
-    v-if="href.length"
+    v-else
   >
   Btn Link
     <span class="">
@@ -14,19 +27,6 @@
   </NuxtLink>
   
 
-  <button :class="[
-      white ? 'text-n-8' : 'text-n-1',
-      'btn-base'
-    ]"
-    v-else
-  >
-  Btn Def
-    <span class="">
-      {{ children }}
-    </span>
-    <ButtonSvg :color="color" />
-  </button>
-  
   
 </template>
 
