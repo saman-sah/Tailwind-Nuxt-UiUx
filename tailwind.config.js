@@ -128,7 +128,7 @@ export default {
           "@apply font-code text-xs font-bold uppercase tracking-wider": {},
         },
         ".btn-base": {
-          "@apply button relative inline-flex items-center h-11 transition-colors hover:text-color-1": {},
+          "@apply button relative inline-flex items-center justify-center h-11 transition-colors hover:text-color-1": {},
         },
       });
       addUtilities({

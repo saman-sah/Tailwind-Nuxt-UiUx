@@ -1,7 +1,6 @@
 <template>
-
     <svg
-      className="absolute top-0 left-0"
+      style="position: absolute;top: 0;left: 0;"
       width="21"
       height="44"
       viewBox="0 0 21 44"
@@ -14,35 +13,34 @@
       />
     </svg>
     <svg
-      className="absolute top-0 left-[1.3125rem] w-[calc(100%-2.625rem)]"
+      style="position: absolute;left: 1.3125rem; width: calc(100% - 2.625rem);"
       height="44"
       viewBox="0 0 100 44"
       preserveAspectRatio="none"
       :fill="color ? color : 'none'"
     >
-  
-        <polygon
-        v-if="color"
+      <template v-if="color">
+        <polygon        
           fill="white"
           fillRule="nonzero"
           points="100 0 100 44 0 44 0 0"
         />
-          <template v-else>
-            <polygon
-            fill="url(#btn-top)" 
-            fillRule="nonzero"
-            points="100 42 100 44 0 44 0 42"
-          />
-          <polygon
-            fill="url(#btn-bottom)" 
-            fillRule="nonzero"
-            points="100 0 100 2 0 2 0 0"
-          />
-          </template>
-
+      </template>
+      <template v-else>
+        <polygon
+          fill="url(#btn-top)" 
+          fillRule="nonzero"
+          points="100 42 100 44 0 44 0 42"
+        />
+        <polygon
+          fill="url(#btn-bottom)" 
+          fillRule="nonzero"
+          points="100 0 100 2 0 2 0 0"
+        />
+      </template>
     </svg>
     <svg
-      className="absolute top-0 right-0"
+    style="position: absolute;top: 0;right: 0;"
       width="21"
       height="44"
       viewBox="0 0 21 44"
@@ -60,12 +58,20 @@
 </template>
 
 <script setup>
-import { defineProps } from 'vue';
 
 defineProps({
   color: {
     type: String,
     default: '',
   },
+});
+
+const svgClass = computed(() => {
+  return {
+    absolute: true,
+    'top-0': true,
+    'left-[1.3125rem]': true,
+    'w-[calc(100%-2.625rem)]': true,
+  };
 });
 </script>

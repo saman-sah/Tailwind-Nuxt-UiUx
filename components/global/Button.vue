@@ -1,26 +1,26 @@
 <template>
    <button :class="[
-      color ? 'text-n-8' : 'text-n-1',className || '',
+      color ? 'text-n-8' : 'text-n-1',className, px || 'px-7',
       'btn-base'
     ]"
     v-if="!href"
   >
-  Btn Def
+<slot />
     <span class="relative z-10">
       {{ children }}
     </span>
-    <ButtonSvg class="ddddddddddd" :color="color" />
+    <ButtonSvg :color="color" />
   </button>
   
   <NuxtLink :class="[
-      white ? 'text-n-8' : 'text-n-1',
+      color ? 'text-n-8' : 'text-n-1',className, px || 'px-8',
       'btn-base'
     ]"
     :to="href"
     v-else
   >
-  Btn Link
-    <span class="">
+  <slot />
+    <span class="relative z-10">
       {{ children }}
     </span>
     <ButtonSvg :color="color" />

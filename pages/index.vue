@@ -3,9 +3,9 @@
     <h1>Hello World !</h1>
 
   <div class="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-    <Button />
+    <Button class-name="mt-10" href="#login" >BTN</Button>
   </div>
-  <ButtonGradient class="aaaaaaaaaaaa"/>
+  <ButtonGradient />
   </div>
 </template>
 
