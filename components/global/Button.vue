@@ -4,8 +4,9 @@
       'btn-base'
     ]"
     v-if="!href"
+    @click="$emit('toggleNavigation')"
   >
-<slot />
+    <slot />
     <span class="relative z-10">
       {{ children }}
     </span>

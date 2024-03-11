@@ -7,7 +7,8 @@
     <Header />
   </div>
   <ButtonGradient />
-  </div>
+  
+</div>
 </template>
 
 <script setup>
