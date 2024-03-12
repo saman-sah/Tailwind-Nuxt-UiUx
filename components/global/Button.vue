@@ -6,9 +6,8 @@
     v-if="!href"
     @click="$emit('toggleNavigation')"
   >
-    <slot />
-    <span class="relative z-10">
-      {{ children }}
+    <span class="relative z-50">
+      <slot />
     </span>
     <ButtonSvg :color="color" />
   </button>
@@ -20,9 +19,9 @@
     :to="href"
     v-else
   >
-  <slot />
+  
     <span class="relative z-10">
-      {{ children }}
+      <slot />
     </span>
     <ButtonSvg :color="color" />
   </NuxtLink>

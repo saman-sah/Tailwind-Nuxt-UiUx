@@ -5,6 +5,7 @@
   <div class="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
     <!-- <Button class-name="mt-10" href="#login" >BTN</Button> -->
     <Header />
+    <Hero />
   </div>
   <ButtonGradient />
   
