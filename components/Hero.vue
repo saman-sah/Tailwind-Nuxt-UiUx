@@ -1,6 +1,6 @@
 <template>
     <SectionBase 
-        className="pt-[12rem] -mt-[5.25rem]"
+        class="pt-[12rem] -mt-[5.25rem]"
         crosses
         crossesOffset="lg:translate-y-[5.25rem]"
         customPaddings

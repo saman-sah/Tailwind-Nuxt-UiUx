@@ -5,12 +5,12 @@
         'max-w-[50rem] mx-auto mb-12 lg:mb-20 md:text-center'
       ]"
     >
-      <TagLine
+      <BenefitsTagLine
         v-if="tag"
         class="mb-4 md:justify-center"
       >
         {{ tag }}
-      </TagLine>
+      </BenefitsTagLine>
       <h2 
         v-if="title"
         class="h2"

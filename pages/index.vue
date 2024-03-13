@@ -1,16 +1,13 @@
 <template>
   <div>
-    <h1>Hello World !</h1>
-
-  <div class="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
-    <!-- <Button class-name="mt-10" href="#login" >BTN</Button> -->
-    <Header />
-    <Hero />
-    <Benefits />
+    <div class="pt-[4.75rem] lg:pt-[5.25rem] overflow-hidden">
+      <Header />
+      <Hero />
+      <Benefits />
+      <Collaboration />
+    </div>
+    <ButtonGradient />  
   </div>
-  <ButtonGradient />
-  
-</div>
 </template>
 
 <script setup>
