@@ -83,7 +83,7 @@
                 </div>
                 <DesignHeroBackgroundCircles />
             </div>
-
+            <CompanyLogos className="hidden relative z-10 mt-20 lg:block" />
         </div>
 
         <DesignHeroBottomLine />

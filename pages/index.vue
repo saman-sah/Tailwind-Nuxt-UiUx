@@ -6,6 +6,7 @@
     <!-- <Button class-name="mt-10" href="#login" >BTN</Button> -->
     <Header />
     <Hero />
+    <Benefits />
   </div>
   <ButtonGradient />
   

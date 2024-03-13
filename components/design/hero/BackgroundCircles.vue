@@ -3,7 +3,7 @@
     <DesignHeroRings />
 
 
-    <MouseParallax strength={0.07} parallaxContainerRef={parallaxRef}>
+    <!-- <MouseParallax strength={0.07} parallaxContainerRef={parallaxRef}> -->
       <div class="absolute bottom-1/2 left-1/2 w-0.25 h-1/2 origin-bottom rotate-[46deg]">
         <div
           :class="[
@@ -57,7 +57,7 @@
           ]"
         />
       </div>
-    </MouseParallax>
+    <!-- </MouseParallax> -->
   </div>
 
 </template>

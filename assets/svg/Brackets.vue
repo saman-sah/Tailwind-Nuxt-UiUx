@@ -1,6 +1,6 @@
-const brackets = (position) =>
-  position === "left" ? (
+<template>
     <svg
+      v-if="position === 'left'"
       width="5"
       height="14"
       viewBox="0 0 5 14"
@@ -10,13 +10,14 @@ const brackets = (position) =>
       <path d="M5 0.822266H1V12.8223H5" stroke="url(#brackets-left)" />
       <defs>
         <linearGradient id="brackets-left" x1="50%" x2="50%" y1="0%" y2="100%">
-          <stop offset="0%" stopColor="#89F9E8" />
-          <stop offset="100%" stopColor="#FACB7B" />
+          <stop offset="0%" stop-color="#89F9E8" />
+          <stop offset="100%" stop-color="#FACB7B" />
         </linearGradient>
       </defs>
     </svg>
-  ) : (
+
     <svg
+    v-else
       width="5"
       height="14"
       viewBox="0 0 5 14"
@@ -35,11 +36,19 @@ const brackets = (position) =>
           y1="0%"
           y2="100%"
         >
-          <stop offset="0%" stopColor="#9099FC" />
-          <stop offset="100%" stopColor="#D87CEE" />
+          <stop offset="0%" stop-color="#9099FC" />
+          <stop offset="100%" stop-color="#D87CEE" />
         </linearGradient>
       </defs>
     </svg>
-  );
 
-export default brackets;
+</template>
+
+<script setup>
+defineProps({
+  position: {
+    type: String,
+    default: 'left'
+  }
+})
+</script>
