@@ -6,6 +6,7 @@
       <Benefits />
       <Collaboration />
       <Services />
+      <Pricing />
     </div>
     <ButtonGradient />  
   </div>
