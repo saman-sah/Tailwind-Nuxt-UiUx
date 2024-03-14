@@ -5,6 +5,7 @@
       <Hero />
       <Benefits />
       <Collaboration />
+      <Services />
     </div>
     <ButtonGradient />  
   </div>
