@@ -11,7 +11,7 @@
     </TagLine>
     <h2
       v-if="title"
-      class="h2"
+      class="h2 md:text-center"
     >
       {{ title }}
     </h2>

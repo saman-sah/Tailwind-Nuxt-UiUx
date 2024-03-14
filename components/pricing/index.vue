@@ -29,6 +29,8 @@
 
       <div class="relative">
         <PricingList />
+        <LeftLine />
+        <RightLine />
       </div>
     </div>
   </SectionBase>
@@ -38,6 +40,8 @@
 import { stars,smallSphere } from '~/assets';
 import Heading from './Heading.vue'
 import PricingList from './PricingList.vue'
+import RightLine from '../design/pricing/RightLine.vue'
+import LeftLine from '../design/pricing/LeftLine.vue'
 
 
 </script>
