@@ -44,14 +44,15 @@
             </ul>
           </div>
           <Generating
-            className="absolute left-4 right-4 bottom-4 border border-n-1/10 lg:left-1/2 lg-right-auto lg:bottom-8 lg:-translate-x-1/2" 
+            className="absolute left-4 right-4 bottom-4 border border-n-1/10 lg:left-1/2 lg-right-auto lg:bottom-8 lg:-translate-x-1/2"
           />
         </div>
 
         <div class="relative z-1 grid gap-5 lg:grid-col-2">
           <div class="relative min-h-[39rem] border border-n-1/10 rounded-3xl overflow-hidden">
             <div class="absolute inset-0">
-              <img :src="service2" 
+              <img 
+                :src="service2" 
                 alt="robot"
                 class="h-full w-full object-cover"
                 width="600px"
@@ -66,10 +67,9 @@
                 Automaticlly enhance your photos using our AI app's photo editing feature. Try it now!
               </p>
             </div>
-
             <DesignServicesPhotoChatMessage />
-
           </div>
+
           <div class="p-4 bg-n-7 rounded-3xl overflow-hidden lg:min-h-[46rem]">
             <div class="py-12 px-4 xl:px-8">
               <h4 class="h4 mb-4">
@@ -90,7 +90,9 @@
                   ]"
                 >
                   <div :class="[
-                    indexIcon === 2 ? 'flex items-center justify-center w-full h-full bg-n-7 rounded-[1rem]' : ''
+                      indexIcon === 2 
+                      ? 'flex items-center justify-center w-full h-full bg-n-7 rounded-[1rem]' 
+                      : ''
                     ]"
                   >
                     <img 
@@ -115,20 +117,18 @@
               <DesignServicesVideoChatMessage />
               <DesignServicesVideoBar />
             </div>
-
           </div>
         </div>
-
         <DesignServicesGradient />
-
       </div>
     </div>
   </SectionBase>
 </template>
 
 <script setup>
-import HeadingServices from './Heading.vue'
 import { check, service1, service2, service3 } from '~/assets'
 import { brainwaveServices, brainwaveServicesIcons } from '~/utils/constant'
+
 import Generating from '../Generating.vue'
+import HeadingServices from './Heading.vue'
 </script>

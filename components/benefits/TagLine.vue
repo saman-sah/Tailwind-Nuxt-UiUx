@@ -1,16 +1,16 @@
 <template>
-    <div
-      :class="[
-        className,
-        'tagline flex items-center'
-      ]"
-    >
-      <Brackets position="left" />
-      <div class="mx-3 text-n-3">
-        <slot />
-      </div>
-      <Brackets position="right" />
+  <div
+    :class="[
+      className,
+      'tagline flex items-center'
+    ]"
+  >
+    <Brackets position="left" />
+    <div class="mx-3 text-n-3">
+      <slot />
     </div>
+    <Brackets position="right" />
+  </div>
 </template>
 
 <script setup>

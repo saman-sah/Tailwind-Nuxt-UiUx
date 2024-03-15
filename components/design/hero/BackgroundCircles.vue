@@ -64,6 +64,7 @@
 
 <script setup>
 import { useParallax } from '@vueuse/core'
+
 const mount = ref(false)
 
 const circle1 = ref(null);
@@ -81,7 +82,6 @@ onMounted(() => {
   useParallax(circle5, { strength: 0.07 });
   useParallax(circle6, { strength: 0.07 });
 
-  // Set mounted flag to true after mounting
   mount.value = true;
 });
 </script>

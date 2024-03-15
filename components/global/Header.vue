@@ -6,11 +6,17 @@
       ]"
     >
       <div class="flex items-center px-5 lg:px-7.5 xl:px-10 max-lg:py-4">
-
-        <NuxtLink class="block w-[12rem] xl:mr-8" to="#hero">
-          <img :src="brainwave" width="190px" height="40px" alt="Brainwave" />
+        <NuxtLink 
+          class="block w-[12rem] xl:mr-8" 
+          to="#hero"
+        >
+          <img 
+            :src="brainwave" 
+            width="190px" 
+            height="40px" 
+            alt="Brainwave" 
+          />
         </NuxtLink>
-
         <div class="flex flex-row justify-between w-full">
           <nav :class="[
             openNvigation ? 'flex' : 'hidden',
@@ -43,16 +49,15 @@
             </NuxtLink>
             <Button class="hidden lg:flex" href="#login" >
               Sign Up
-            </Button>
-            
+            </Button>            
           </div>
           <Button 
             px="px-3"
             class-name="ml-auto lg:hidden"
             @toggleNavigation="toggleNavigation()"
           >
-              <MenuSvg :openNavigation="openNvigation" />
-            </Button>
+            <MenuSvg :openNavigation="openNvigation" />
+          </Button>
         </div>
       </div>
     </div>
@@ -61,27 +66,19 @@
 </template>
 
 <script setup>
-import { brainwave } from '~/assets';
-import { navigation } from '~/utils/constant';
-import MenuSvg from '~/assets/svg/MenuSvg.vue';
+import { brainwave } from '~/assets'
+import { navigation } from '~/utils/constant'
+
+import MenuSvg from '~/assets/svg/MenuSvg.vue'
 
 const route = useRoute()
 const openNvigation = ref(false)
-// const setOpenNvigation = ref(false)
 
 function toggleNavigation() {
-  console.log('toggle anv');
   openNvigation.value = !openNvigation.value
-  // if(openNvigation) {
-  //   setOpenNvigation.value = false
-  // }else {
-  //   setOpenNvigation.value = true
-  // }
 }
 
 function handleClick() {
-  console.log('handle click');
-  // setOpenNvigation.value = false
   openNvigation.value = false
 }
 </script>

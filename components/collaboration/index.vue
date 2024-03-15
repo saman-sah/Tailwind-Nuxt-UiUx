@@ -33,11 +33,9 @@
             </p>
           </li>
         </ul>
-
         <Button>
           Tri it now
         </Button>
-
       </div>
 
       <div class="lg:ml-auto xl:w-[38rem] mt-4">
@@ -81,8 +79,8 @@
               </div>
             </li>
           </ul>
-          <LeftCurve />
-          <RightCurve />
+          <DesignCollaborationLeftCurve />
+          <DesignCollaborationRightCurve />
         </div>
       </div>
 
@@ -91,13 +89,10 @@
 </template>
 
 <script setup>
-import { check, brainwaveSymbol } from '~/assets'
 import { 
   collabContent, 
   collabText,
   collabApps
 } from '~/utils/constant'
-
-import LeftCurve from '../design/collaboration/LeftCurve.vue'
-import  RightCurve from '../design/collaboration/RightCurve.vue'
+import { check, brainwaveSymbol } from '~/assets'
 </script>

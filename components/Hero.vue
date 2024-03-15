@@ -25,7 +25,10 @@
                     Unleash the power of AI within Brainwave. Upgrade your productivity
                     with Brainwave, the open AI chat app.
                 </p>
-                <Button href="/pricing" color="white">
+                <Button 
+                    href="/pricing" 
+                    color="white"
+                >
                     Get started
                 </Button>
             </div>
@@ -60,13 +63,13 @@
                                         >
                                     </li>
                                 </ul>
-                            </div><!--  //scroll paralax -->
+                            </div>
                             <div>
                                 <Notification 
                                     className="hidden absolute -right-[5.5rem] bottom-[11rem] w-[18rem] xl:flex"
                                     title="Code Generation"
                                 />
-                            </div><!--  //scroll paralax -->
+                            </div>
                         </div>
                     </div>
                     <DesignHeroGradient />
@@ -85,19 +88,16 @@
             </div>
             <CompanyLogos className="hidden relative z-10 mt-20 lg:block" />
         </div>
-
         <DesignHeroBottomLine />
     </SectionBase>
 </template>
 
 <script setup>
-import { curve, heroBackground, robot } from '~/assets'
-import { heroIcons }  from '~/utils/constant'
-
 import { useParallax } from '@vueuse/core'
+
+import { heroIcons }  from '~/utils/constant'
+import { curve, heroBackground, robot } from '~/assets'
 
 const container = ref(null)
 useParallax(container)
-
-
 </script>

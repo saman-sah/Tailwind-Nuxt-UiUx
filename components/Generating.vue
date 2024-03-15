@@ -16,6 +16,7 @@
 
 <script setup>
 import { loading } from "../assets"
+
 defineProps({
   className: {
     type: String,

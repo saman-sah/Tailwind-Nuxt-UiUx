@@ -1,5 +1,9 @@
 <template>
-  <svg class="block" :width="0" :height="0">
+  <svg 
+    class="block" 
+    :width="0" 
+    :height="0"
+  >
     <defs>
       <linearGradient id="btn-left" x1="50%" x2="50%" y1="0%" y2="100%">
         <stop offset="0%" stop-color="#89F9E8" />

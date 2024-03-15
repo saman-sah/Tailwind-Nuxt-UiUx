@@ -63,19 +63,21 @@
             </div>
           </div>
         </div>
-        <Gradient />
+        <DesignRoadmapGradient />
       </div>
       <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
-        <Button href="/roadmap">Our roadmap</Button>
+        <Button href="/roadmap">
+          Our roadmap
+        </Button>
       </div>
     </div>
   </SectionBase>
 </template>
 
 <script setup>
-import { check2, grid, loading1 } from '~/assets';
-import Heading from './Heading.vue';
 import { roadmap } from '~/utils/constant'
-import TagLine from './TagLine.vue';
-import Gradient from '../design/roadmap/Gradient.vue';
+import { check2, grid, loading1 } from '~/assets'
+
+import Heading from './Heading.vue'
+import TagLine from './TagLine.vue'
 </script>

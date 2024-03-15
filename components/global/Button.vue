@@ -18,8 +18,7 @@
     ]"
     :to="href"
     v-else
-  >
-  
+  >  
     <span class="relative z-10">
       <slot />
     </span>
@@ -38,14 +37,9 @@ defineProps({
     type: String,
     default: ''
   },
-  onClick: {
-
-  },
-  children: {
-
-  },
   px: {
-
+    type: String,
+    default: ''
   },
   href: {
     type: String,

@@ -1,17 +1,17 @@
 <template>
   <div class="absolute top-[18.25rem] -left-[30.375rem] w-[56.625rem] opacity-60 mix-blend-color-dodge pointer-events-none">
-      <div class="absolute top-1/2 left-1/2 w-[58.85rem] h-[58.85rem] -translate-x-3/4 -translate-y-1/2">
-        <img
-          className="w-full"
-          :src="gradient"
-          width="942px"
-          height="942px"
-          alt="Gradient"
-        />
-      </div>
+    <div class="absolute top-1/2 left-1/2 w-[58.85rem] h-[58.85rem] -translate-x-3/4 -translate-y-1/2">
+      <img
+        className="w-full"
+        :src="gradient"
+        width="942px"
+        height="942px"
+        alt="Gradient"
+      />
     </div>
+  </div>
 </template>
 
 <script setup>
-import { gradient } from '~/assets';
+import { gradient } from '~/assets'
 </script>

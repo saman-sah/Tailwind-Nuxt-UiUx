@@ -62,7 +62,7 @@
 
 <script setup>
 import { benefits } from '~/utils/constant'
-import ClipPath from '~/assets/svg/ClipPath.vue'
+
 import Arrow from '~/assets/svg/Arrow.vue'
-import GradientLight from './GradientLight.vue'
+import ClipPath from '~/assets/svg/ClipPath.vue'
 </script>

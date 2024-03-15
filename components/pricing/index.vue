@@ -29,8 +29,8 @@
 
       <div class="relative">
         <PricingList />
-        <LeftLine />
-        <RightLine />
+        <DesignPricingLeftLine />
+        <DesignPricingRightLine />
       </div>
       <div class="flex justify-center mt-10">
         <NuxtLink 
@@ -45,11 +45,8 @@
 </template>
 
 <script setup>
-import { stars,smallSphere } from '~/assets';
+import { stars, smallSphere } from '~/assets';
+
 import Heading from './Heading.vue'
 import PricingList from './PricingList.vue'
-import RightLine from '../design/pricing/RightLine.vue'
-import LeftLine from '../design/pricing/LeftLine.vue'
-
-
 </script>

@@ -1,10 +1,11 @@
 <template>
   <div :class="[
-    className,
-    'max-w-[50rem] mx-auto mb-12 lg:mb-20 md:text-center'
-  ]"
+      className,
+      'max-w-[50rem] mx-auto mb-12 lg:mb-20 md:text-center'
+    ]"
   >
-    <TagLine v-if="tag" 
+    <TagLine 
+      v-if="tag" 
       className="mb-4 md:justify-center"
     >
       Get started wuth brainwave
@@ -26,6 +27,7 @@
 
 <script setup>
 import TagLine from './TagLine.vue'
+
 defineProps({
   className: {
     type: String,
