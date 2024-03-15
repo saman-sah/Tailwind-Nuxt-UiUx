@@ -7,6 +7,7 @@
       <Collaboration />
       <Services />
       <Pricing />
+      <Roadmap />
     </div>
     <ButtonGradient />  
   </div>
