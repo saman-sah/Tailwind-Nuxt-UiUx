@@ -32,6 +32,14 @@
         <LeftLine />
         <RightLine />
       </div>
+      <div class="flex justify-center mt-10">
+        <NuxtLink 
+          to="/pricing"
+          class="text-xs font-code font-bold tracking-wider uppercase border-b"
+        >
+          See the full details
+        </NuxtLink>
+      </div>
     </div>
   </SectionBase>
 </template>

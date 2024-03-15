@@ -1,13 +1,13 @@
 <template>
   <div :class="[
     className,
-    'max-w-[50rem] mx-auto mb-12 lg:mb-20'
+    'max-w-[50rem] mx-auto mb-12 lg:mb-20 md:text-center'
   ]"
   >
     <TagLine v-if="tag" 
       className="mb-4 md:justify-center"
     >
-      Some Children
+      Get started wuth brainwave
     </TagLine>
     <h2
       v-if="title"

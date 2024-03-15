@@ -3,7 +3,7 @@
     <div 
       v-for="item in pricing"
       :key="item.id"
-      class="w-[19rem] max-lg:w-full h-full px-6 bg-n-8 border border-n-6 rounded-[2rem] lg:w-auto even:py-14 odd:py-8 odd:my-4 [&>h4]:first:text-color-2 [&>h4]:second:text-color-1 [&>h4]:third:text-color-3"
+      class="w-[19rem] max-lg:w-full h-full px-6 bg-n-8 border border-n-6 rounded-[2rem] lg:w-auto even:py-14 odd:py-8 odd:my-4 [&>h4]:first:text-color-2 [&>h4]:even:text-color-1 [&>h4]:last:text-color-3"
     >
       <h4 class="h4 mb-4">
         {{ item.title }}
