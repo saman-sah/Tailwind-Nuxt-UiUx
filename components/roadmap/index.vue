@@ -14,14 +14,14 @@
           :key="item.id"
           :class="[
             item.colorful ? 'bg-conic-gradient' : 'bg-n-6',
-            'md:flex even:translate-y-[7rem] p-0.25 rounded-[2.5rem]'
+            'md:flex even:md:translate-y-[7rem] p-0.25 rounded-[2.5rem]'
           ]"
         >
-          <div class="relative p-8 bg-n-8 rounded-[2rem] overflow-hidden xl:p-15">
+          <div class="relative p-8 bg-n-8 rounded-[2.7rem] overflow-hidden xl:p-15">
             <div class="absolute top-0 left-0 max-w-full">
               <img 
                 :src="grid" 
-                alt="grid"
+                alt="Grid"
                 class="w-full"
                 width="550px"
                 height="550px"
@@ -44,26 +44,29 @@
                     {{ item.status }}
                   </div>
                 </div>
-
-                <div class="mb-10 -my-10 -mx-15">
-                  <img 
-                    :src="item.imageUrl" 
-                    :alt="item.title"
-                    width="630px"
-                    height="420px"
-                    class="w-full"
-                  >
-                </div>
-                <h4 class="h4 mb-4">
-                  {{ item.title }}
-                </h4>
-                <p class="body-2 text-n-4">
-                  {{ item.text }}
-                </p>
               </div>
+              <div class="mb-10 -my-10 -mx-15">
+                <img 
+                  :src="item.imageUrl" 
+                  :alt="item.title"
+                  width="628px"
+                  height="426px"
+                  class="w-full"
+                >
+              </div>
+              <h4 class="h4 mb-4">
+                {{ item.title }}
+              </h4>
+              <p class="body-2 text-n-4">
+                {{ item.text }}
+              </p>
             </div>
           </div>
         </div>
+        <Gradient />
+      </div>
+      <div className="flex justify-center mt-12 md:mt-15 xl:mt-20">
+        <Button href="/roadmap">Our roadmap</Button>
       </div>
     </div>
   </SectionBase>
@@ -74,5 +77,5 @@ import { check2, grid, loading1 } from '~/assets';
 import Heading from './Heading.vue';
 import { roadmap } from '~/utils/constant'
 import TagLine from './TagLine.vue';
-
+import Gradient from '../design/roadmap/Gradient.vue';
 </script>
