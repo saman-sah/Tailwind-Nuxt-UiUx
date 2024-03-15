@@ -8,6 +8,7 @@
       <Services />
       <Pricing />
       <Roadmap />
+      <Footer />
     </div>
     <ButtonGradient />  
   </div>
